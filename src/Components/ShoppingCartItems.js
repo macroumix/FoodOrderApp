@@ -31,11 +31,11 @@ const ShoppingCartItems = ({ totalNumberOfOrder, cart }) => {
           <div className="cart-items-individual">
             <div className="cart-amount">{element.amount}</div>
             <div className="cart-name">{element.name}</div>
-            <div className="cart-price">{element.price*element.amount.toFixed(2)}€</div>
+            <div className="cart-price">{(element.price*element.amount).toFixed(2)}€</div>
           </div>
         );
       })}
-      <div className="order-total">GRAND TOTAL = {cartGrandTotal} €</div>
+      <div className="order-total">GRAND TOTAL = {cartGrandTotal.toFixed(2)} €</div>
       <div className="order-div">
         {/* <button onClick={() => {cartItemList=[]}} className="clear-button">Clear Order</button> */}
         <br />

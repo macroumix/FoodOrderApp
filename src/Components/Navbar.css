@@ -8,12 +8,12 @@
     padding: 25px;
     background: linear-gradient(to right, #898178ff, #BB957Bff);
     border: 1px solid linear-gradient(to right, #898178ff, #BB957Bff);
-    border-radius: 5%;
+    border-radius: 50px;
     z-index: 999;
 }
 
 #store-id {
-    border-radius: 45%;
+    border-radius: 25px;
 }
 
 #store-id:hover{

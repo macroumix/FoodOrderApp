@@ -5,8 +5,8 @@
     height: 350px;
     background: linear-gradient(to right, #B17949ff, #785C39ff);
     overflow-y: scroll;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 #cart-items::-webkit-scrollbar-track

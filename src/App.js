@@ -9,17 +9,14 @@ import { shoppingObject } from "./Components/ShoppingItems";
 
 function App() {
   const [isCartVisible, setIsCartVisible] = useState(false);
-  const [totalNumberOfOrder, setTotalNumberOfOrder] = useState(0);
   const [cart, setCart] = useState(
     shoppingObject.reduce((prev, next) => {
       return { ...prev, [next.name]: 0 };
     }, {})
   );
 
-  useEffect(() => {
-    setTotalNumberOfOrder(Object.values(cart).reduce((sum, i) => sum + i, 0));
-  }, [cart]);
-
+  const totalNumberOfOrder = Object.values(cart).reduce((sum, i) => sum + i, 0)
+  
   const shoppingItemIncreaseHandler = (name) => {
     setCart((prev) => ({
       ...prev,
